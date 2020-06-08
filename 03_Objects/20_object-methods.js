@@ -1,15 +1,15 @@
 let restaurant = {
-    name : 'Hotel Delight',
-    guestCapacity : 30,
-    guestCount : 0 ,
-    checkAvailability : function(partySize){
+    name: 'Hotel Delight',
+    guestCapacity: 30,
+    guestCount: 0,
+    checkAvailability: function (partySize) {
         let availableSeats = this.guestCapacity - partySize
-        
+
         this.guestCapacity = availableSeats
         this.guestCount = this.guestCount + partySize
 
-        if(availableSeats > 0) {
-            console.log(`${availableSeats} Seats are available`) 
+        if (availableSeats > 0) {
+            console.log(`${availableSeats} Seats are available`)
             return true
         }
         else {
@@ -17,7 +17,7 @@ let restaurant = {
             return false
         }
         // console.log(this)    //prints the current object
-        
+
     }
 }
 
