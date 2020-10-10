@@ -36,3 +36,58 @@ toDoArray.forEach(function (toDoArray, index) {
     const num = index + 1
     console.log(`${num}.${toDoArray}`)
 })
+console.log("For loop")
+for (let count = 0; count < toDoArray.length; count++) {
+    console.log(`${count + 1}. ${toDoArray[count]}`)
+}
+
+// 1. Convert array to array of objects --> text, completed
+// 2. Create a function to remove a todo by text value
+//[ 'drink green tea', 'go for walking', 'talk bath', 'have breakfast' ]
+const toDos = [
+    { text: 'to drink green tea', completed: true },
+    { text: 'go for walking', completed: true },
+    { text: 'take bath', completed: false },
+    { text: 'have breakfast', completed: false }
+]
+// console.log(toDos)
+
+const deleteToDo = function (myArray, todo) {
+    const index = myArray.findIndex(function (myArray) {
+        return myArray.text.toLowerCase() === todo.toLowerCase()
+    })
+    if (index > -1) {
+        console.log('Removed item is : ' + myArray.splice(index, 1))
+    }
+    return myArray
+}
+
+// console.log(deleteToDo(toDos, 'Take Bath'))
+
+// console.log('//////To find todos that yet needs to be completed')
+
+//getThingsToDO(todos)
+const getThingsToDO = function (todo) {
+    return todo.filter(function (todos) {
+        // return todos.completed === false
+        return !todos.completed     // alternate way
+    })
+}
+//console.log(getThingsToDO(toDos))
+
+console.log('//////To sort todos by uncompleted first')
+
+const sortTodo = function (todos) {
+    return todos.sort(function (a, b) {
+        if (!a.completed && b.completed) {
+            return -1
+
+        } else if (a.completed && !b.completed) {
+            return 1
+        }
+        else return 0
+    })
+}
+
+sortTodo(toDos)
+console.log(toDos)
