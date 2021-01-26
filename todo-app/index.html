@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="todo.css" type="text/css">
+    <title>ToDos App</title>
+</head>
+
+<body>
+    <h1>ToDo's App !!</h1>
+    <h3 style="font-family:'Lucida Sans'">This is a new html for my todos</h3>
+    <!-- <p>1. Get up early</p>
+    <p>2. Get Refreshed and bath</p>
+    <p>3. Exercises and workout</p>
+    <p>4. Prepare Breakfast</p> -->
+
+    <!-- <button id="add-todo"> Add a To Do</button> <br> -->
+    <table border="1">
+        <tbody>
+            <tr>
+                <td><label class="labels">
+                        <input type="checkbox" id="hideToDo"> Check to hide Completed to dos
+                    </label>
+                </td>
+                <td>
+                    <form id="form-todo">
+                        <input type="text" name="newTodo" placeholder="add new To Do">
+                        <button>Add</button>
+                    </form>
+                </td>
+                <td>
+                    <label class="labels">
+                        Search: <input id="search-todo" type="text" placeholder="filter todo">
+                    </label>
+                </td>
+            <tr>
+                <td rowspan="3" align="center">
+                    <div id="displayToDos"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="todo-app.js"></script>
+
+</body>
+
+</html>

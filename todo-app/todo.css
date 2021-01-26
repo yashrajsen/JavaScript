@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 10;
+}
+html {
+    font-size: medium;
+}
+body{
+    background: rgb(25, 25, 25); 
+    color: white;    
+    font-family: Helvetica, Arial,  sans-serif;
+    }
+.labels {
+    font-weight: bold;
+}
+
+#displayToDos {
+    color:dodgerblue;
+}

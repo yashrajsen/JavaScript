@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="notes.css" type="text/css" rel="stylesheet">
+    <title>Notes App</title>
+</head>
+<!-- ids are unique to atmost one elements
+classes are unique to multiple elements -->
+
+<body>
+    <h1>Notes App</h1>
+    <h2>Take notes and never forget</h2>
+    <!-- <p class="note">This application was created by Anilkumar Devarajan </p>
+    <p class="note" id="search-label">Search notes: </p> -->
+    <!-- <input id="search-text" type="text" placeholder="filter notes"> -->
+    <!--  //itis ane empty element, so no ending tag-->
+    <!-- 
+    
+
+    <form id="name-form">
+        <input type="text" placeholder="First Name" name="firstName">
+        <button>Submit</button>
+    </form> -->
+
+    <!-- <button id="remove-all">Remove all Notes</button> naming convertion with  -->
+    <!-- select tag is for creating dropdown; and option tag is for the drop down texts-->
+    <button id="create-note">Create Note</button>
+    <div id="notes"></div>
+    <select id="sort-filter">
+        <option value="byEdited">Sort by last edited</option>
+        <option value="byCreated">Sort by recently created</option>
+        <option value="alphabetical">Sort alphabetically</option>
+    </select>
+    <script src="notes-app.js"></script>
+</body>
+
+</html>
