@@ -41,3 +41,24 @@ console.log(notes)  //returns [ 'My New Note', 'This is the second new item', 'n
 notes[1] = 'Note.. 2'   // assign the new value at position 2 of the array
 console.log(notes)  //returns [ 'My New Note', 'Note.. 2', 'note 4', 'note 5' ]
 
+//Combining Arrays
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = first.concat(second);
+console.log(combined);
+
+//Slicing Arrays
+
+//const slice = combined.slice(2, 4);   //this returns [3,4]
+// const slice = combined.slice(2);        //this returns [3,4,5,6]
+const slice = combined.slice();         //this returns copy of the combined array.
+console.log(slice);
+
+//spread operator
+const combined2 = [...first, 'a', ...second, 'b'];
+console.log(combined2)
+
+//creating copy of an array using the spread operator
+const copy = [...combined2];
+console.log(copy);
