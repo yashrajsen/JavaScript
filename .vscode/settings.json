@@ -4,5 +4,7 @@
     "editor.fontFamily": "Ubuntu Mono",
     "scm.inputFontFamily": "Ubuntu Mono",
     "terminal.integrated.fontFamily": "Ubuntu Mono",
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "editor.formatOnType": true,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu Mono', 'Droid Sans', sans-serif"
 }
