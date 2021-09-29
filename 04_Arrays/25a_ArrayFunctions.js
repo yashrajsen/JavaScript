@@ -123,6 +123,6 @@ const finalItems = number5
 //need to put a bracket for showing an object, other wise the arrow funct will think it as a code snippet
 console.log(finalItems);
 
-//Reducing an array
-const sum = number4.reduce((accumulator, currentValue) => accumulator + currentValue);      //reduce function returns a single value for an array as a number or string , etc)
+//Reducing an array to a single value
+const sum = number4.reduce((accumulator, currentValue) => accumulator + currentValue, 0);      //reduce function returns a single value for an array as a number or string , etc)
 console.log(sum);
