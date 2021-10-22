@@ -97,4 +97,4 @@
 
 // //method 3: to shorthand the method 2; replace accumulator by a and current by b
 //   return array.reduce((a, b) => (a > b) ? a:b);
-}
+// }
