@@ -98,3 +98,35 @@
 // //method 3: to shorthand the method 2; replace accumulator by a and current by b
 //   return array.reduce((a, b) => (a > b) ? a:b);
 // }
+
+// 7: Movies
+const movies = [
+    { title: 'a', year: 2018, rating: 4.5 },
+    { title: 'b', year: 2018, rating: 4.7 },
+    { title: 'c', year: 2018, rating: 3 },
+    { title: 'd', year: 2017, rating: 4.5 }
+];
+
+//all movies in 2018 with rating >4
+//sort them by their rating
+//descending order
+//pick only their title
+//result must be 'b','a'
+
+const filtered = movies
+    .filter(m => m.rating > 4 && m.year === 2018)
+    // .sort((m1, m2) => {
+    // const rating1 = m1.rating;
+    // const rating2 = m2.rating;
+    // if (rating1 > rating2) return 1;
+    // if (rating1 < rating2) return -1;
+    // return 0;
+    // })
+    .sort((m1, m2) => m1.rating - m2.rating)
+    //4.7-4.5 = 0.2 which is positive then return 1
+    //4.5-4.7 = -0.2 which is negative them returns -1
+    //if equal then returns 0
+    .reverse()  // to get the reverse sorting order.
+    .map(obj => obj.title);
+
+console.log(filtered);
